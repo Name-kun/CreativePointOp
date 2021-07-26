@@ -73,7 +73,7 @@ public class CreativePointOpListener implements Listener, CommandExecutor, TabCo
         } if (command.getName().equalsIgnoreCase("cplist")) {
             String url = "https://masa3mc.xyz/creativepoint.html";
             try {
-                akita(sender, url);
+                getFigure(sender, url);
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -81,7 +81,7 @@ public class CreativePointOpListener implements Listener, CommandExecutor, TabCo
         return true;
     }
 
-    public void akita(CommandSender sender, String url) throws IOException {
+    public void getFigure(CommandSender sender, String url) throws IOException {
         Document document = Jsoup.connect(url).get();
         Elements elements = document.select("tbody tr");
         for (Element element : elements) {
