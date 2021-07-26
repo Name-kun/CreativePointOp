@@ -1,0 +1,13 @@
+name: CreativePointOp
+version: ${project.version}
+main: xyz.namekun.creativepointop.CreativePointOp
+api-version: 1.17
+
+commands:
+  sendtext:
+    usage: /sendtext
+    description: sends target a text
+    permission: sendtext
+  cplist:
+    usage: /cplist
+    description: show you the list of how many element there is for cp.
