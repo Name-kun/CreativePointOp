@@ -10,4 +10,4 @@ commands:
     permission: sendtext
   cplist:
     usage: /cplist
-    description: show you the list of how many element there is for cp.
+    description: show you the list of how many elements there are for cp.
